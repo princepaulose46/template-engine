@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{title}</title>
+</head>
+<body style="background-color:lightgoldenrodyellow;">
+    <h1 style="text-align:center">{message}</h1>
+
+    <div style="margin-top:20px;text-align:center;">
+    <form action="\user\register" method="POST">
+        <input type="text" placeholder="Name" id="name" name="name"><br><br>
+        <input type="text" name="age" placeholder="Age"><br><br>
+        <input type="text" name="place" placeholder="place"><br><br>
+        <input type="submit" value="Submit">
+    </form><br><br>
+    </div>
+
+<table style="border: 1px solid black; text-align: center; padding: 20px;margin-left: auto;margin-right: auto;font-size: 20px">
+    <tbody>
+        <tr><th>Name</th><th>Age</th><th>place</th></tr>
+        %users%<tr><td>$name$</td><td>$age$</td> <td>$place$</td></tr>%
+    </tbody>
+</table>
+</body>
+</html>
